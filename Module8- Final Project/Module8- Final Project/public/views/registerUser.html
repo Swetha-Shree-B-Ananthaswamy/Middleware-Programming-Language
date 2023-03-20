@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,700">
+    <title>The Trending Courses</title>
+  </head>
+  <body>
+    <!-- DARK BLUE HEADER-->
+    <header class="header">
+      <nav class="nav nav--course"><a class="nav__el" href="/">Loan Details </a>
+        <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input type="text" placeholder="Search courses">
+        </form>
+      </nav>
+      <div class="header__logo"><img src="/img/logo.png" alt="Course logo"></div>
+      <nav class="nav nav--user"><a class="nav__el nav__el" href="/login">Login</a><a class="nav__el nav__el" href="/signup">Sign Up</a><a class="nav__el nav__el" href="/api/v1/users">Users</a><a class="nav__el" href="/me"><img class="nav__user-img" src="/img/users/user.png" alt="user phpto"><span>Users </span></a></nav>
+    </header>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <!--CONTENT-->
+    <main class="main">
+      <div class="card-container">
+        <div class="card">
+          <div class="card__header">
+            <div class="card__details">
+              <h4 class="card__sub-heading">Sign Up</h4>
+              <p class="ard__text">Please enter the following Details</p>
+              <div class="card__data"></div>
+              <form action="/api/v1/registerUser" method="post">
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" id="cpassword" name="cpassword">
+                <label for="submit"></label>
+                <input class="card__sub-heading" type="submit" value="Register User">
+              </form>
+              <p class="ard__text"> </p><b>Have An Account? </b><a href="/login">Login </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="footer__logo"><img src="img/logo.png" alt="Course logo">
+        <ul class="footer__nav">
+          <li><a href="#">About us </a></li>
+          <li><a href="#">Download Loan information</a></li>
+          <li> <a href="#">Become a Student</a></li>
+          <li> <a href="#">Careers</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; by Student Learners.</p>
+      </div>
+    </div>
+  </body>
+</html>

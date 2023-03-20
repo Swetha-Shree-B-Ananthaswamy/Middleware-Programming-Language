@@ -1,0 +1,29 @@
+extends baseTemplate
+
+block content
+
+        h3.heading-primary
+            span  Loan Details 
+        
+        div
+           table.table-header
+                thead 
+                    tr 
+                      th(scope="col") #
+                      th(scope="col") Loan Type
+                      th(scope="col") Loan Number
+                      th(scope="col") Amount
+                      th(scope="col") Interest Rate
+                      th(scope="col") Loan Term 
+                      
+ 
+                tbody 
+                    - var loanDetails = loans 
+                    each loan , i in loanDetails
+                        tr.table-secondary
+                            th(scope="row") #{i}
+                                td #{loan.LOANTYPE}
+                                td #{loan.LOANNUMBER}
+                                td #{loan.AMOUNT}
+                                td #{loan.INTERESTRATE}
+                                td #{loan.LOANTERM}

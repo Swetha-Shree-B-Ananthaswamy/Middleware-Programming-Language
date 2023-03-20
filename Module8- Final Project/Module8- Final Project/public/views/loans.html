@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,700">
+    <title>The Trending Courses</title>
+  </head>
+  <body>
+    <!-- DARK BLUE HEADER-->
+    <header class="header">
+      <nav class="nav nav--course"><a class="nav__el" href="/">Loan Details </a>
+        <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <input type="text" placeholder="Search courses">
+        </form>
+      </nav>
+      <div class="header__logo"><img src="/img/logo.png" alt="Course logo"></div>
+      <nav class="nav nav--user"><a class="nav__el nav__el" href="/login">Login</a><a class="nav__el nav__el" href="/signup">Sign Up</a><a class="nav__el nav__el" href="/api/v1/users">Users</a><a class="nav__el" href="/me"><img class="nav__user-img" src="/img/users/user.png" alt="user phpto"><span>Users </span></a></nav>
+    </header>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert"><strong></strong></div>
+    <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button>
+    <!--CONTENT-->
+    <h3 class="heading-primary"><span> Loan Details </span></h3>
+    <div>
+      <table class="table-header">
+        <thead> 
+          <tr> 
+            <th scope="col">#</th>
+            <th scope="col">Loan Type</th>
+            <th scope="col">Loan Number</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Interest Rate</th>
+            <th scope="col">Loan Term </th>
+            <th scope="col">Start Date</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr class="table-secondary">
+            <th scope="row">1
+              <td>Education Loan</td>
+              <td>1297</td>
+              <td>3000</td>
+              <td>5</td>
+              <td>3</td>
+              <td>10/01/2023 </td>
+            </th>
+          </tr>
+          <tr> 
+            <th scope="row">2
+              <td>Home Loan</td>
+              <td>1300</td>
+              <td>6000</td>
+              <td>5</td>
+              <td>3</td>
+              <td>19/01/2023</td>
+            </th>
+          </tr>
+          <tr> 
+            <th scope="row">3
+              <td>Marriage Loan</td>
+              <td>1500</td>
+              <td>9000</td>
+              <td>6</td>
+              <td>2</td>
+              <td>29/05/2023</td>
+            </th>
+          </tr>
+          <tr> 
+            <th scope="row">3
+              <td>Vip Loan</td>
+              <td>1500</td>
+              <td>9000</td>
+              <td>6</td>
+              <td>2</td>
+              <td>01/05/2023</td>
+            </th>
+          </tr>
+          <tr> 
+            <th scope="row">3
+              <td>House Loan</td>
+              <td>1500</td>
+              <td>9000</td>
+              <td>6</td>
+              <td>2</td>
+              <td>30/05/2023</td>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="footer__logo"><img src="img/logo.png" alt="Course logo">
+        <ul class="footer__nav">
+          <li><a href="#">About us </a></li>
+          <li><a href="#">Download Loan information</a></li>
+          <li> <a href="#">Become a Student</a></li>
+          <li> <a href="#">Careers</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; by Student Learners.</p>
+      </div>
+    </div>
+  </body>
+</html>

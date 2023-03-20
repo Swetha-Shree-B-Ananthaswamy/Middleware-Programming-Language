@@ -1,0 +1,26 @@
+
+
+- if(locals.errors) 
+    each err ,i in locals.errors
+        div(class="alert alert-warning alert-dismissible fade show",role="alert")
+            strong #{err.msg}
+        button(type="button", class="close", data-dismiss="alert", aria-label="Close")
+            span(aria-hidden="true")
+
+- if(success_msg != '') 
+        div(class="alert alert-warning alert-dismissible fade show",role="alert")
+            strong #{success_msg}
+        button(type="button",class="close",data-dismiss="alert",aria-label="Close")
+            span(aria-hidden="true")
+
+- if(error_msg != '') 
+        div(class="alert alert-warning alert-dismissible fade show", role="alert")
+            strong #{error_msg}
+        button( type="button", class="close", data-dismiss="alert", aria-label="Close")
+            span(aria-hidden="true")
+
+- if(error != '') 
+        div(class="alert alert-warning alert-dismissible fade show", role="alert")
+            strong #{error}
+        button(type="button", class="close", data-dismiss="alert", aria-label="Close")
+            span(aria-hidden="true")
